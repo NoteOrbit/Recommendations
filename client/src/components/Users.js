@@ -17,7 +17,7 @@ export const Users =() => {
 
       return (
         
-          <div className="col-md-6">
+          <div className="col-md-20">
             <h1>About Data</h1>
             <table className="table table-striped">
               <thead>

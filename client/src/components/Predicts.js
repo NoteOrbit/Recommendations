@@ -17,7 +17,7 @@ export const Predict =() => {
 
       return (
         
-          <div className="col-md-6">
+          <div className="col-md-20">
             <h1>Top Colffee 10</h1>
             <table className="table table-striped">
               <thead>

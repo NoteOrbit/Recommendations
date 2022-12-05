@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import {About} from './components/About'
+import About from './components/About'
 import {Users} from './components/Users'
-import {Navbar} from './components/Navbar'
+import CollapsibleExample from './components/Navbar'
 import {Predict} from './components/Predicts'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <CollapsibleExample/>
       <div>
         <Routes>
           <Route path="/Predict" element={<Predict/>}/>
@@ -22,3 +24,5 @@ function App() {
 
 
 export default App
+
+

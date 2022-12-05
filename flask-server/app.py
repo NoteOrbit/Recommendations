@@ -35,11 +35,12 @@ def load():
 ### weighted rating (WR) = (v ÷ (v+m)) × R + (m ÷ (v+m)) × C
 
 
+
 CORS(app)
 
 @app.route('/rating', methods=['GET'])
 def get_data():
-    data = mongo.db.rating.find().limit(10)
+    data = mongo.db.rating.find().limit(20)
     response = json_util.dumps(data)
     return response
 
@@ -51,9 +52,19 @@ def get_user(id):
 
 @app.route('/predict', methods=['GET'])
 def getRank():
-    top = mongo.db.comment.find()
+    top = mongo.db.comment.find().limit(10)
     response = json_util.dumps(top)
     return response
 
+@app.route('/test', methods=['GET'])
+def gettest():
+    top = mongo.db.comment.find({}, {'_id':0,'count':0,'mean':0})
+    response = json_util.dumps(top)
+    re = json_util.loads(response)
+    d ={'data':re}
+    return d
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+
