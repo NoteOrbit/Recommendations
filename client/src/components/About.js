@@ -98,9 +98,9 @@ function About() {
     </Alert>
     </div>
     {/* <LineRechartComponent/> */}
-    <div className='g-4 row row-cols-md-2 row-cols-1'>
+    <center>
     <GridExample/>
-    </div>
+    </center>
     </>
   );
 }

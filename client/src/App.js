@@ -9,10 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+    
     <Router>
       <CollapsibleExample/>
+      
       <div>
         <Routes>
+          
           <Route path="/Predict" element={<Predict/>}/>
           <Route path="/data" element={<Users/>} />
           <Route path="/" element={<About/>} />
