@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 import withReactContent from 'sweetalert2-react-content'
 
 
-
-
 function Login(params) {
     const navigate = useNavigate()
     const MySwal = withReactContent(Swal)
