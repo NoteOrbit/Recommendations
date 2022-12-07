@@ -99,6 +99,15 @@ def add_user():
  
         return not_found()
 
+@app.route('/store/<type1>',methods=['GET'])
+def store(type1):
+    if request.method == 'GET':
+        x = type1
+        ge = mongo.db.infostore.find({'type': {'$all':[x]}},{'Name':1,'_id':0})
+        response = json_util.dumps(ge)
+        return Response(response,mimetype='application/json')
+    
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0",debug=True)
 

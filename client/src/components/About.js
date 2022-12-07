@@ -4,9 +4,12 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import CollapsibleExample from './Navbar'
 
 function GridExample() {
   return (
+    <>
+    
     <Row xs={1} md={2} className="g-4">
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col>
@@ -25,6 +28,7 @@ function GridExample() {
         
       ))}
     </Row>
+    </>
   );
 }
 
@@ -85,6 +89,7 @@ function GridExample() {
 function About() {
   return (
     <>
+    <CollapsibleExample/>
     <div role="alert" class="alert">
     <Alert variant="info">
       <Alert.Heading>TEST VERSIONS</Alert.Heading>

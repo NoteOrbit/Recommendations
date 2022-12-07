@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-
+import CollapsibleExample from './Navbar'
 const API = process.env.REACT_APP_API;
 
 export const Predict =() => {
@@ -16,7 +16,8 @@ export const Predict =() => {
       }, []);
 
       return (
-        
+        <>
+          <CollapsibleExample/>
           <div className="col-md-20">
             <h1>Top Colffee 10</h1>
             <table className="table table-striped">
@@ -40,5 +41,6 @@ export const Predict =() => {
               </tbody>
             </table>
           </div>
+          </>
       );
     };
