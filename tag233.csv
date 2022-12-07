@@ -1,4 +1,4 @@
-,store,type,menu coffee,menu non coffee,fillter
+,Store,type,menu coffee,menu non coffee,fillter
 0,NAP's Coffee & Roasters,speedbar,"hazelnut latte,vanilla latte,caramel latte,espresso,americano,cappuccino,mocha,latte","Red Plum Sparking,Honey Lemon Sparking,Lychee Sparking,Mint Lime Sparking,Vanilla Milk,Hazelnut Milk,Caramel Milk,Peach Tea,Apple tea,Taro Latte,Thai tea,Lemon tea,matcha,cocoa",
 1,sangob,speedbar,"espresso,americano,cappuccino,mocha,latte,cold brew,americano yuzu,iced espresso coconut,latte coconut,latte mint,house blend caramel macchiato","milk caremel,matcha milk,apple tea,peach tea,cocoa mint",
 2,SongSarn,slowbar,"espresso,americano,cappuccino,mocha,latte,cold brew","cocoa,matcha,peach tea,vanilla ginger,thai tea,milk careme,jasmine green tea",
@@ -31,5 +31,4 @@
 30,Snoopcat Cafe,"speedbar,restaurant",,,
 31,Stufe coffee,"speedbar,bakery,restaurant",,,
 32,Tree Cafe Rim Moon,"hybrid,bakery,restaurant",,,
-33,Yuanjai Cafe,"slowbar,bakery","Iced Americano,Iced Latte,Iced Cappuccino,Iced Mocha,Iced Espresso,Dirty,Iced Caramel Macchiato,Iced Espresso Lychee soda,Espresso Tonic,Espresso Peach soda,Yuanjai,Pandanus juice Espresso coffee,Coldcha,Ethiopia drip,Kenya drip",,
-,,,,"Iced Thai Green Tea,Iced Pink Milk,Iced Thai Tea,Iced Lemonade Tea,Iced Peach Tea,Iced Cocoa,Iced Caramel Milk,Iced Chocolate Milk,Mixberry Milk,Pink lemonade,Lychee Rose Soda,Orange Mixberry Soda",
+33,Yuanjai Cafe,"slowbar,bakery","Iced Americano,Iced Latte,Iced Cappuccino,Iced Mocha,Iced Espresso,Dirty,Iced Caramel Macchiato,Iced Espresso Lychee soda,Espresso Tonic,Espresso Peach soda,Yuanjai,Pandanus juice Espresso coffee,Coldcha,Ethiopia drip,Kenya drip","Iced Thai Green Tea,Iced Pink Milk,Iced Thai Tea,Iced Lemonade Tea,Iced Peach Tea,Iced Cocoa,Iced Caramel Milk,Iced Chocolate Milk,Mixberry Milk,Pink lemonade,Lychee Rose Soda,Orange Mixberry Soda",
