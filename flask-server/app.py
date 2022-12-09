@@ -105,7 +105,9 @@ def store(type1):
         x = type1
         ge = mongo.db.infostore.find({'type': {'$all':[x]}},{'Name':1,'_id':0})
         response = json_util.dumps(ge)
-        return Response(response,mimetype='application/json')
+        re = json_util.loads(response)
+        d ={'data':re}
+        return d
     
 
 if __name__ == "__main__":

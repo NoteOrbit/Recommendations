@@ -14,13 +14,10 @@ function GridExample() {
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Recommendations item</Card.Title>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                {idx}
               </Card.Text>
             </Card.Body>
           </Card>
@@ -35,61 +32,62 @@ function GridExample() {
 
 
 
-// class LineRechartComponent extends React.Component {
+class LineRechartComponent extends React.Component {
 
-//     data = [
-//         {
-//             "name": "Jan 2019",
-//             "Product A": 3432,
-//             "Procuct B": 2342
-//         },
-//         {
-//             "name": "Feb 2019",
-//             "Product A": 2342,
-//             "Procuct B": 3246
-//         },
-//         {
-//             "name": "Mar 2019",
-//             "Product A": 4565,
-//             "Procuct B": 4556
-//         },
-//         {
-//             "name": "Apr 2019",
-//             "Product A": 6654,
-//             "Procuct B": 4465
-//         },
-//         {
-//             "name": "May 2019",
-//             "Product A": 8765,
-//             "Procuct B": 4553
-//         }
-//     ]
+    data = [
+        {
+            "name": "Jan 2019",
+            "test A": 3432,
+            "test B": 2342
+        },
+        {
+            "name": "Feb 2019",
+            "test A": 2342,
+            "test B": 3246
+        },
+        {
+            "name": "Mar 2019",
+            "test A": 4565,
+            "test B": 4556
+        },
+        {
+            "name": "Apr 2019",
+            "test A": 6654,
+            "test B": 4465
+        },
+        {
+            "name": "May 2019",
+            "test A": 8765,
+            "test B": 4553
+        }
+    ]
 
-//     render() {
-//         return (
-//             <center>
-//             <ResponsiveContainer width="80%" height={400}>
-//             <LineChart data={this.data}
-//                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-//                 <CartesianGrid strokeDasharray="3 3" />
-//                 <XAxis dataKey="name" />
-//                 <YAxis />
-//                 <Tooltip />
-//                 <Legend />
-//                 <Line type="monotone" dataKey="Product A" stroke="#0095FF" />
-//                 <Line type="monotone" dataKey="Procuct B" stroke="#FF0000" />
-//             </LineChart>
-//             </ResponsiveContainer>
-//             </center>
-//         )
-//     };
-// }
+    render() {
+        return (
+            <center>
+            <ResponsiveContainer width="80%" height={400}>
+            <LineChart data={this.data}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line type="monotone" dataKey="test A" stroke="#0095FF" />
+                <Line type="monotone" dataKey="test B" stroke="#FF0000" />
+            </LineChart>
+            </ResponsiveContainer>
+            </center>
+        )
+    };
+}
 
 
 function About() {
   return (
     <>
     <CollapsibleExample/>
+    <LineRechartComponent/>
     <div role="alert" class="alert">
     <Alert variant="info">
       <Alert.Heading>TEST VERSIONS</Alert.Heading>
@@ -97,9 +95,6 @@ function About() {
       Versions is not complete
       </p>
       <hr />
-      <p className="mb-0">
-        make by NoteChu
-      </p>
     </Alert>
     </div>
     {/* <LineRechartComponent/> */}
